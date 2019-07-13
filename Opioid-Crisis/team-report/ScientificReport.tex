@@ -1,0 +1,116 @@
+\documentclass[a4paper]{article}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{indentfirst}
+\usepackage{float}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts,amssymb}
+\usepackage[top=1.9cm,left=2.1cm,right=2.1cm,bottom=2.6cm]{geometry}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\renewcommand{\baselinestretch}{1.1}
+\setlength{\parskip}{0.5\baselineskip}
+
+
+\begin{document}
+\begin{center}
+\LARGE\textbf{Causes and Solutions to U.S. Opioid Crisis}
+\end{center}
+\vspace{2cm}
+
+\vspace{2mm}
+\begin{center}
+\large\textbf{16340154 -- Shuo Liu}\\
+\end{center}
+
+\begin{center}
+\small{School of Data and Computer Science, Sun Yat-sen University}
+\end{center}
+
+\begin{center}
+\textit{July. $8^{nd}$ \textit, 2019\\}
+\end{center}
+\vspace{1cm}
+
+
+
+
+\noindent \HRule
+\vspace{2.5mm} \\
+\large{
+\Large{$\mathbb{T}$}\large he United States is experiencing a national crisis regarding the use of synthetic and non- synthetic opioids, either for the treatment and management of pain or for recreational purposes. Federal organizations such as the Centers for Disease Control are struggling to save lives and prevent negative health effects of this epidemic. To analysis and solve this problem systematically, we focus on the following aspects of U.S. opioid crisis. Why does it happen? How does it evolve? And what can we do to deal with it? In our work, model \texttt{OCEAN} and its enhancement \texttt{D-OCEAN} are proposed to delve into the evolution and future of opioids.}
+\vspace{2mm} \\
+\HRule
+\vspace{2cm}
+\begin{figure}[h]
+\centering
+\includegraphics[width=17cm,height=9cm]{opioids_smartstock_istock_thinkstock2.jpeg}
+\end{figure}
+\clearpage
+%%
+\vspace{6mm}
+\begin{center}
+\LARGE\textbf{I. Overview} \\
+\end{center}
+\vspace{2mm}
+
+\large{With the opioid crisis becoming a national concern, the federal government is struggling to figure out how to respond. Why does it happen? How does it evolve? And what can we do to deal with it? Here, we proposed model \texttt{OCEAN} and its enhancement \texttt{D-OCEAN} to delve into the evolution of opioids.
+
+We first get the growth pattern of drug reported quantity through a large number of data analysis and case studies. We observe that: \textbf{(a)} A county owns a similar growth pattern with its nearby.  \textbf{(b)} Linear growth patterns can be found in counties who are isolated by similarity with the surrounding. Based on such observations, we assume that the increase in drug reports is made up of two main components: \textbf{intrinsic increment} and \textbf{extrinsic influence} from nearby counties. Then we defined a cellular automata to simulate evolution of opioid cases for all counties. Reverse evolving, origin of a specific opioid can be traced. Forward evolving, prediction is made for each location.
+
+After that, we further consider the \textbf{socio-economic factors} and modify our model. By computing the Pearson correlation coefficient between drug reported quantity and the socio-economic factors, we find some important \textbf{demographic features} which are highly related to opioid use. \textbf{K-means} algorithm is then applied to group data into several groups, each of which represents a typical type. Our results have been reversely verified to ensure the accuracy of similarity analysis. Taking the idea of simulate anneal, we add a new update rule to make intrinsic factor more considerate. As proved by comparative experiments, enhanced model possesses a higher robustness and more accurate predict results.
+
+Base on our works above, we present some strategies for countering the opioid crisis. We validate that such strategies can really improve the opioid epidemic situation and sensitivity analysis shows the utility of each strategy. 
+
+In conclusion, we employ a cellular automata for simulating the evolution patterns of opioids in \textbf{Task I}. We enhanced our model in \textbf{Task II} by introducing some socio-economic factors, taking account of demographic heterogeneity in each state. Finally, corresponding solutions were put forward, according to the analysis of our models.}
+
+
+
+%%
+\vspace{5mm}
+\begin{center}
+\LARGE\textbf{II. Contribution} \\
+\end{center}
+\vspace{2mm}
+
+
+
+
+\large{
+In this team work my contribution major comes to the \textbf{document writing, model building assistance, and data visualization}. 
+
+In the early period of this project, I took response for the reference collection and data processing, for noises are widely exists in the dataset we found. Well-processed data provides convenience for the work in the later. After this, I worked with my teammates to analysis the methods we could utilize and built the model, \textit{i.e.}, \texttt{OCEAN} and \texttt{D-OCEAN}. I also dealt with the data visualization and elegantly showed the results. 
+
+The biggest and the hardest part in our work lies in the paper writing (\textit{note that this is not a strictly organized paper actually}). I well-organized our work to illustrate them orderly. This work is really onerous and tedious, but huge success is achieved during this experience.}
+
+
+%%
+\vspace{5mm}
+\begin{center}
+\LARGE\textbf{III. Acknowledgement} \\
+\end{center}
+\vspace{.5mm}
+
+\begin{itemize} \item{First and foremost, I would like to show my deepest gratitude to my teacher, professor \textit{Liang}, who has provided us with valuable theoretical guidance of real-time system. Without his enlightening instruction, impressive kindness and patience, we could never have completed our projects. His keen and vigorous academic observation enlightens me not only in this thesis but also in my future study.}
+\item{My sincere appreciation also goes to my \textit{teammates} in our group. We got along in harmony, accomplished tasks together, and each brought out his own strengths. All of these make this teamwork-experience valuable.}
+\end{itemize}
+
+%%
+\vspace{5mm}
+\begin{center}
+\LARGE\textbf{IV. Resources} \\
+\end{center}
+\vspace{1mm}
+\begin{center}
+    
+\noindent{
+\large\textsc{V}iew the full implementation and download the dataset we used on my \textsf{GitHub}:\\
+\underline{\normalsize\texttt{{https://github.com/LovelyBuggies/Python\_2019MCM\_OpioidCrisis}}}\large.
+}
+\end{center}
+
+\end{document}
